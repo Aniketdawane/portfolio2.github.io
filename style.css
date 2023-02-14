@@ -1,0 +1,303 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: aliceblue;
+    /* outline: 1px solid blue; */
+}
+
+body {
+    background-color: black !important;
+}
+
+/* ................nav bar................ */
+#header {
+    height: 100vh;
+    width: 100%;
+
+}
+
+.img img {
+    border-radius: 50%;
+    margin-left: 08rem;
+    /* border: 0.5px solid white; */
+}
+
+.main .img {
+
+    /* border: 1px solid red; */
+    background-image: url(background.png);
+    background-size: cover;
+    background-position: center;
+    /* padding: 1rem; */
+}
+.cv-button1 a{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    padding: 15px;
+    background-color: #ff004f;
+    text-decoration: none;
+    border-radius: 8px;
+
+}
+
+nav {
+    margin-left: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 1rem 1rem;
+
+}
+
+nav ul li a {
+    color: aliceblue;
+    text-decoration: none;
+    font-size: 1.2rem;
+    position: relative;
+}
+
+nav h3 {
+    color: aliceblue;
+
+
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(240, 5, 118);
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: all ease 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+
+}
+
+.content h1 span {
+    color: rgb(240, 79, 5);
+
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+/* .................hero........... */
+.img2 img {
+    height: 25rem;
+    border-radius: 15px;
+}
+
+/* .................About............... */
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.sub-titles {
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+}
+
+/* .sub-titles:hover{
+    border-bottom: 3px solid rgb(240, 5, 118);
+
+} */
+.sub-titles::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: rgb(240, 5, 118);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.tab-titles .actice-link::after {
+    width: 50%;
+
+}
+
+.tab-content ul li {
+    list-style: none;
+    margin: 10px 0;
+
+}
+
+.tab-content ul li span {
+    color: rgb(240, 5, 118);
+    font-size: 1rem;
+    font-weight: 300px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active-tab {
+    display: block;
+}
+
+/* ....................progress............ */
+#port{
+    height: 100%;
+}
+.probar {
+    background-color: rgb(68, 94, 7) !important;
+}
+
+.card {
+    height: 22rem;
+    border-radius: 1rem !important;
+    transition: all ease 0.5s;
+
+}
+
+.card1 {
+    background: #424141 !important;
+    border-radius: 1rem !important;
+}
+
+.card1:hover {
+    background: rgb(253, 19, 74) !important;
+    transform: translateY(-10px);
+
+}
+
+.text {
+    color: rgb(77, 90, 114);
+    font-weight: bold;
+}
+
+span {
+    color: rgb(240, 79, 5);
+}
+
+/* ............porfolio............ */
+#port {
+    height: 80vh;
+    width: 100%;
+}
+
+.work {
+    height: 28rem;
+    width: 20rem;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.work img {
+    display: block;
+    transition: all ease 0.5s;
+}
+
+.porfolio img {
+
+    height: 28rem;
+    width: 20rem;
+    border-radius: 1rem;
+
+}
+
+.layer {
+    width: 100%;
+    height: 0%;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+    border-radius: 1rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    text-align: center;
+    font-size: small;
+    transition: all ease 0.8s;
+
+}
+
+.layer h4 {
+    font-size: 18px;
+}
+
+.work:hover .layer {
+    height: 100%;
+}
+
+.work a {
+
+    color: white !important;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 48%;
+    text-align: center;
+    line-height: 0px;
+
+
+}
+
+.work:hover img {
+    transform: scale(1.1);
+}
+
+.button button {
+    background-color: #ff004f;
+    border: transparent;
+}
+
+/* ..........................contact.............. */
+#contact {
+    /* border: 1px solid red; */
+    height: 100%;
+
+}
+.icons a{ 
+
+    /* border: 2px solid green; */
+    font-size: 2rem;
+}
+.cv-button a{
+
+    color: white;
+    padding: 7px;
+    background-color: #ff004f;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* ...................footer........................ */
+.footer{
+    height: 3rem;
+    /* border: 2px solid red; */
+}
